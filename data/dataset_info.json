@@ -1,0 +1,41 @@
+{
+  "generated_at": "2026-08-04T20:00:30.121695",
+  "total_samples": 1000,
+  "samples_per_class": 200,
+  "num_classes": 5,
+  "class_names": {
+    "0": "Normal",
+    "1": "Bearing Fault",
+    "2": "Rotor Imbalance",
+    "3": "Shaft Misalignment",
+    "4": "Electrical Fault"
+  },
+  "duration_seconds": 1.0,
+  "sampling_frequency_hz": 12000.0,
+  "axes": [
+    "accel_x",
+    "accel_y",
+    "accel_z"
+  ],
+  "seed": 42,
+  "splits": {
+    "train": 696,
+    "val": 153,
+    "test": 151
+  },
+  "class_distribution": {
+    "Normal": 200,
+    "Bearing Fault": 200,
+    "Rotor Imbalance": 200,
+    "Shaft Misalignment": 200,
+    "Electrical Fault": 200
+  },
+  "motor_parameters": {
+    "nominal_rpm": 1800.0,
+    "num_poles": 4,
+    "num_slots": 24,
+    "rotor_mass": 2.5,
+    "line_frequency": 50.0,
+    "bearing_balls": 9
+  }
+}

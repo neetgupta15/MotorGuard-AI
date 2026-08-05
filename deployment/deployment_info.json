@@ -1,0 +1,23 @@
+{
+  "model_name": "Random Forest",
+  "n_features": 96,
+  "n_classes": 5,
+  "class_names": {
+    "0": "Normal",
+    "1": "Bearing Fault",
+    "2": "Rotor Imbalance",
+    "3": "Shaft Misalignment",
+    "4": "Electrical Fault"
+  },
+  "test_accuracy": 0.9900662251655629,
+  "test_f1_score": 0.9900802871319616,
+  "preprocessing": {
+    "fs": 12000,
+    "window_size": 1024,
+    "bandpass": [
+      10,
+      5000
+    ],
+    "normalization": "zscore"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "model_used": "Random Forest",
+  "n_windows": 100,
+  "overall_accuracy": 0.93,
+  "overall_f1_score": 0.9299122807017544,
+  "misclassification_rate": 0.07,
+  "confusion_matrix": [
+    [
+      35,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      3,
+      27,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      12,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0,
+      10,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      9
+    ]
+  ],
+  "per_class_accuracy": {
+    "Normal": 1.0,
+    "Bearing Fault": 0.9,
+    "Rotor Imbalance": 0.8,
+    "Shaft Misalignment": 1.0,
+    "Electrical Fault": 0.9
+  }
+}

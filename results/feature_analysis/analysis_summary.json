@@ -1,0 +1,170 @@
+{
+  "n_samples": 15312,
+  "n_features": 96,
+  "n_classes": 5,
+  "top_features_rf": [
+    {
+      "name": "x_spectral_spread",
+      "importance": 0.07765907904640619
+    },
+    {
+      "name": "x_wp_energy_band_4",
+      "importance": 0.04642791281019867
+    },
+    {
+      "name": "x_band_energy_mid",
+      "importance": 0.04284533150684079
+    },
+    {
+      "name": "x_band_energy_high",
+      "importance": 0.04271530504921077
+    },
+    {
+      "name": "x_wp_energy_band_1",
+      "importance": 0.03627536072692312
+    },
+    {
+      "name": "x_wp_energy_band_0",
+      "importance": 0.03200896399403869
+    },
+    {
+      "name": "z_spectral_spread",
+      "importance": 0.029687388974857332
+    },
+    {
+      "name": "x_band_energy_low",
+      "importance": 0.02967467552189305
+    },
+    {
+      "name": "z_wp_energy_band_3",
+      "importance": 0.028491897069850388
+    },
+    {
+      "name": "x_spectral_centroid",
+      "importance": 0.027695507003314846
+    },
+    {
+      "name": "z_wp_energy_band_2",
+      "importance": 0.027345366913391688
+    },
+    {
+      "name": "y_mean_frequency",
+      "importance": 0.025950563067942148
+    },
+    {
+      "name": "y_spectral_centroid",
+      "importance": 0.025897192165916034
+    },
+    {
+      "name": "x_wp_energy_band_5",
+      "importance": 0.024950244976404638
+    },
+    {
+      "name": "z_wp_energy_band_0",
+      "importance": 0.024710692609286343
+    },
+    {
+      "name": "x_wp_energy_band_6",
+      "importance": 0.022769927286783412
+    },
+    {
+      "name": "x_wp_energy_band_3",
+      "importance": 0.02095913964045532
+    },
+    {
+      "name": "y_wp_energy_band_4",
+      "importance": 0.02011044646309069
+    },
+    {
+      "name": "x_peak_to_peak",
+      "importance": 0.020081168207942333
+    },
+    {
+      "name": "x_mean_frequency",
+      "importance": 0.019604185314159903
+    }
+  ],
+  "top_features_mi": [
+    {
+      "name": "y_spectral_centroid",
+      "mi_score": 1.3676696839578857
+    },
+    {
+      "name": "y_mean_frequency",
+      "mi_score": 1.3676696839578857
+    },
+    {
+      "name": "z_band_energy_high",
+      "mi_score": 1.256533188998895
+    },
+    {
+      "name": "z_wp_energy_band_0",
+      "mi_score": 1.245840372321388
+    },
+    {
+      "name": "z_band_energy_low",
+      "mi_score": 1.2330152992353631
+    },
+    {
+      "name": "z_mean_frequency",
+      "mi_score": 1.206265595957721
+    },
+    {
+      "name": "z_spectral_centroid",
+      "mi_score": 1.206265595957721
+    },
+    {
+      "name": "z_wp_energy_band_4",
+      "mi_score": 1.1934322105465436
+    },
+    {
+      "name": "x_band_energy_low",
+      "mi_score": 1.176335418407279
+    },
+    {
+      "name": "x_peak_to_peak",
+      "mi_score": 1.1704869394485
+    },
+    {
+      "name": "x_spectral_centroid",
+      "mi_score": 1.1691274494812913
+    },
+    {
+      "name": "x_mean_frequency",
+      "mi_score": 1.1691274494812913
+    },
+    {
+      "name": "z_zero_crossing_rate",
+      "mi_score": 1.166393816718131
+    },
+    {
+      "name": "x_wp_energy_band_0",
+      "mi_score": 1.1200701093246666
+    },
+    {
+      "name": "y_wp_energy_band_0",
+      "mi_score": 1.1035831726541026
+    },
+    {
+      "name": "x_peak",
+      "mi_score": 1.1010109243134831
+    },
+    {
+      "name": "x_wp_energy_band_2",
+      "mi_score": 1.0993449408843126
+    },
+    {
+      "name": "z_peak",
+      "mi_score": 1.0910165536359808
+    },
+    {
+      "name": "z_wp_energy_band_5",
+      "mi_score": 1.0828819865887485
+    },
+    {
+      "name": "y_wp_energy_band_4",
+      "mi_score": 1.0781467871492374
+    }
+  ],
+  "rf_oob_accuracy": null
+}
