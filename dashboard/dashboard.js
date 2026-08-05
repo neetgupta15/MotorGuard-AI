@@ -734,22 +734,27 @@ function renderAlertsList() {
     alertBadge.textContent = state.alerts.length;
     alertBadge.classList.remove('hidden');
 
+    const faultIcons = { 0: '✅', 1: '⚙️', 2: '⚖️', 3: '🔀', 4: '⚡' };
+
     alertsList.innerHTML = state.alerts.slice(0, 8).map(a => {
         const remainingMs = Math.max(0, a.expiryTime - now);
         const remainingSec = Math.ceil(remainingMs / 1000);
         const progressPct = (remainingMs / CONFIG.alertDurationMs) * 100;
+        const icon = faultIcons[a.faultClass] || '⚠️';
 
         return `
-            <div class="alert-item" id="${a.id}">
+            <div class="alert-item alert-${a.className}" id="${a.id}">
                 <div class="alert-item-header">
                     <div class="alert-time-box">
-                        <span class="alert-dot ${a.className}"></span>
+                        <span class="alert-icon">${icon}</span>
                         <span class="alert-time">${a.time}</span>
                     </div>
-                    <span class="alert-countdown-badge">⌛ ${remainingSec}s active</span>
+                    <span class="alert-countdown-badge">⏳ ${remainingSec}s active</span>
                 </div>
                 <div class="alert-text">${a.text}</div>
-                <div class="alert-progress-bar" style="width: ${progressPct}%"></div>
+                <div class="alert-progress-bar-wrap">
+                    <div class="alert-progress-bar alert-bar-${a.className}" style="width: ${progressPct}%"></div>
+                </div>
             </div>
         `;
     }).join('');
