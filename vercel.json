@@ -1,6 +1,10 @@
 {
   "version": 2,
   "outputDirectory": "dashboard",
-  "cleanUrls": true,
-  "trailingSlash": false
+  "builds": [
+    {
+      "src": "dashboard/**",
+      "use": "@vercel/static"
+    }
+  ]
 }
