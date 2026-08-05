@@ -463,47 +463,53 @@ body {
 }
 
 /* ─── Alerts ───────────────────────────────────────────────────────── */
-.alerts-card { position: relative; }
-
-.alert-badge {
-    background: var(--color-danger);
-    color: white;
-    font-size: 0.65rem;
-    font-weight: 700;
-    min-width: 18px;
-    height: 18px;
-    border-radius: 9px;
+.alerts-card {
+    position: relative;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 5px;
-    margin-left: auto;
+    flex-direction: column;
 }
 
-.alert-badge.hidden { display: none; }
-
 .alerts-list {
-    max-height: 200px;
+    max-height: 155px;
     overflow-y: auto;
     display: flex;
     flex-direction: column;
     gap: 8px;
-    padding-right: 4px;
+    padding-right: 6px;
+}
+
+.alerts-list::-webkit-scrollbar {
+    width: 5px;
+}
+
+.alerts-list::-webkit-scrollbar-track {
+    background: rgba(15, 23, 42, 0.5);
+    border-radius: 4px;
+}
+
+.alerts-list::-webkit-scrollbar-thumb {
+    background: rgba(99, 102, 241, 0.5);
+    border-radius: 4px;
+}
+
+.alerts-list::-webkit-scrollbar-thumb:hover {
+    background: rgba(99, 102, 241, 0.9);
 }
 
 .alert-item {
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 5px;
-    padding: 10px 12px 12px 14px;
-    background: rgba(15, 23, 42, 0.85);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 8px;
+    gap: 4px;
+    padding: 8px 10px 10px 12px;
+    background: rgba(15, 23, 42, 0.92);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 6px;
     font-size: 0.75rem;
+    flex-shrink: 0;
     overflow: hidden;
     backdrop-filter: blur(8px);
-    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.35);
     animation: slideIn 0.3s ease;
 }
 
